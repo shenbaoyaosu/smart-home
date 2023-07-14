@@ -1,0 +1,20 @@
+static_library("demo_service") {
+    sources = [
+        "main_entry.c",
+        "wifi_connect.c",
+        "message.c",
+        "msg_parser.c",
+        "tcp_client.c",
+        "tcp_server.c",
+        "udp_point.c",
+        "response_task.c",
+        "service_task.c",
+        "local_service.c"
+    ]
+    include_dirs = [
+        "//utils/native/lite/include",
+        "//foundation/communication/wifi_lite/interfaces/wifiservice",
+        "//base/iot_hardware/peripheral/interfaces/kits",
+        "//device/bearpi/bearpi_hm_nano/sdk_liteos/include",
+    ]
+}
